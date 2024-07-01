@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 700px;
+    }
+    .flex-item {
+        width: 100px;
+        height: 200px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="flex-item" id="item1">Item 1</div>
+        <div class="flex-item" id="item2">Item 2</div>
+        <div class="flex-item" id="item3">Item 3</div>
+    </div>
+<script>
+    const wrapper = document.querySelector('.wrapper');
+    const item1 = document.querySelector('#item1');
+    const item2 = document.querySelector('#item2');
+    const item3 = document.querySelector('#item3');
+
+    wrapper.style.backgroundColor = 'lightblue';
+    wrapper.style.border = '5px solid black';
+
+    item1.style.backgroundColor = 'red';
+    item1.style.border = '2px dashed white';
+    item1.style.color = 'white';
+
+    item2.style.backgroundColor = 'green';
+    item2.style.border = '2px dashed white';
+    item2.style.color = 'white';
+
+    item3.style.backgroundColor = 'blue';
+    item3.style.border = '2px dashed white';
+    item3.style.color = 'white';
+
+</script>
+</body>
+</html>
